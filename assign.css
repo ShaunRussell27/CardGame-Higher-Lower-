@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url('./casino_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#game {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+}
+#card-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+img {
+    width: 120px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.btn {
+    margin: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: gold;
+    border: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+
+.winning-card {
+    border-color: green;
+}
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 30%; /* This allows 3 cards per row */
+    max-width: 120px; /* cards arent too large */
+}

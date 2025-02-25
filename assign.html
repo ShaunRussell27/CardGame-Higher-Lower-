@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shaun's HighLow Card Game</title>
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="assign.css">
 </head>
 <body>
+    <h1>Shaun's HighLow Card Game</h1>
+    <div id="game">
+        <div id="card-container">
+            <!-- The current card will be shown here -->
+            <img id="current-card" src="" alt="Current Card" style="width: 100px; height: 150px;">
+        </div>
+        <h2>Score: <span id="score">0</span></h2>
+        <h3>Rounds Played: <span id="rounds">0</span>/5</h3>
+        
+        <!-- Buttons for guessing -->
+        <button class="btn" onclick="guess('higher')">Higher</button>
+        <button class="btn" onclick="guess('lower')">Lower</button>
+        
+        <h2 id="result"></h2>
+        
+        <!-- Control buttons for restarting or quitting -->
+        <button class="btn" onclick="restartGame()">play again</button>
+        <button class="btn" onclick="quitGame()">Quit</button>
+        
+        <h3>Previous Rounds:</h3>
+        <ul id="history"></ul>
     
+
+    <!-- Display All Cards -->
+    <h3>All Cards in Order (1-52)</h3>
+    <div class="card-row" id="all-cards"></div>
+</div>
+    <!-- Link to JavaScript file -->
+    <script src="assing2.js"></script>
 </body>
 </html>
