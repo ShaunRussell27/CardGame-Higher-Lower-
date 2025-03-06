@@ -1,4 +1,4 @@
-/* styles.css */
+/* stylessheet*/
 body {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -49,14 +49,16 @@ img {
 .winning-card {
     border-color: green;
 }
+
 .card-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/*for displaying cards at bottom*/
 .card {
     margin: 10px;
     text-align: center;
-    flex: 1 1 30%; /* This allows 3 cards per row */
-    max-width: 120px; /* cards arent too large */
+    flex: 1 1 30%; /* Allows 3 cards to be displayed */
+    max-width: 120px; /* Keep size relative */
 }
